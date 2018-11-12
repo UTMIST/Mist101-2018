@@ -19,7 +19,11 @@ install:
 
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
+  # 
   - conda install tensorflow
+  # Other dependencies
+  - conda install numpy
+  - conda install matplotlib
 
 script:
   - python TensorFlowModel/LinearRegression.py
