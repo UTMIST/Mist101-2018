@@ -26,4 +26,4 @@ install:
   - conda install matplotlib
 
 script:
-  - python TensorFlowModel/LinearRegression.py
+  - python TensorFlowSampleCode/LinearRegression.py

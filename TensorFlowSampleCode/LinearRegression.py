@@ -1,9 +1,9 @@
 """
 Linear Regression with random data.
 To run this script:
-    python LinearRegresson.py
+    - python LinearRegresson.py
 Check optional arguments:
-    python LinearRegression.py -h
+    - python LinearRegression.py -h
 """
 
 import os
@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
-# used for argument parse
+# Used for argument parse
 FLAGS = None
 
 # Generating artificial data.
