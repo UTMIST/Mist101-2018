@@ -13,13 +13,6 @@ Materials for MIST101 course
     ```
 - Install [Anaconda](https://www.continuum.io/)
 - Install [Tensorflow](https://www.tensorflow.org/) and [PyTorch](https://pytorch.org/)
-
-
-
-
-
-
-
 - Install other dependencies
     ```
     conda install matplotlib
