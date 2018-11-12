@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/UTMIST/Mist101-2018.svg?branch=yuchen)](https://travis-ci.org/UTMIST/Mist101-2018)
+
 # UTMIST
 Materials for MIST101 course
 
