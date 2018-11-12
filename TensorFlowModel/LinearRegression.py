@@ -1,5 +1,9 @@
 """
-Linear Regression with random data
+Linear Regression with random data.
+To run this script:
+    python LinearRegresson.py
+Check optional arguments:
+    python LinearRegression.py -h
 """
 
 import os
@@ -9,10 +13,6 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-import xlrd
-
-# Used for generating random data.
-from sklearn.utils import check_random_state
 
 # used for argument parse
 FLAGS = None
@@ -25,8 +25,7 @@ def generate_fake_data(n=50):
     :return: Fake data.
     """
     XX = np.arange(n)
-    rs = check_random_state(0)
-    YY = rs.randint(-10, 10, size=(n,)) + 2.0 * XX
+    YY = np.random.randint(-10, 10, size=50) + 2.0 * XX
     data = np.stack([XX,YY], axis=1)
     return data
 
@@ -75,6 +74,8 @@ def plot(data, wcoeff, bias):
     plt.close()
 
 def main(_):
+    # initial random seeds
+    np.random.seed(0)
     # generate some random data
     data = generate_fake_data(FLAGS.num_data)
     # build graph
@@ -101,9 +102,11 @@ def main(_):
             print('epoch %d, loss=%f' %(epoch_num+1, loss_value))
         # save the values of weight and bias TODO
         # wcoeff, bias = sess.run([W, b])
-
-        writer = tf.summary.FileWriter(FLAGS.log_dir, sess.graph)
-        writer.close()
+        try:
+            writer = tf.summary.FileWriter(FLAGS.log_dir, sess.graph)
+            writer.close()
+        except:
+            print("Errorr: Change your directory!")
     # plot the result
     # plot(data, wcoeff, bias)
     return 0
@@ -112,7 +115,7 @@ def main(_):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--log_dir', type=str,
-                        default='/Users/yuchenwu/Desktop/TensorFlowModel/temp',
+                        default='/home/yuchen/Desktop/Mist101-2018/TensorFlowModel',
                         help='Directory for log data')
     parser.add_argument('--num_epoch', type=int,
                         default=50,
