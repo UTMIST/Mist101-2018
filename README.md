@@ -23,6 +23,11 @@ Materials for MIST101 course
 
 ## PyTorch Examples
 
+## Course Materials
+- [CSC411/2515: Machine Learning and Data Mining Winter 2018](http://www.cs.toronto.edu/~guerzhoy/411_2018/about.html)
+- [CSC411/2515: Machine Learning and Data Mining Fall 2018](https://www.cs.toronto.edu/~rgrosse/courses/csc411_f18/)
+- [CSC321: Intro to Neural Networks and Machine Learning Winter 2018](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/)
+
 ## For Contributors
 - [Pyton Naming Convention](https://visualgit.readthedocs.io/en/latest/pages/naming_convention.html)
 - [C++ Naming Convention](https://llvm.org/docs/CodingStandards.html) I prefer LLVM coding standards.
