@@ -14,7 +14,6 @@ import tensorflow as tf
 # Other dependencies
 import numpy as np
 import matplotlib.pyplot as plt
-
 # Used for argument parse
 FLAGS = None
 
