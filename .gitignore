@@ -1,0 +1,5 @@
+*.gz
+*.local
+*.DS_Store
+.vscode
+.ipynb_checkpoints
