@@ -1,5 +1,5 @@
-# UTMIST - TensorFlow
-TensorFlow Materials for MIST101 Workshop
+# UTMIST - Pytorch
+PyTorch Materials for MIST101 Workshop
 
 ## Install Dependencies
 - Optional: [Conda Virtual Environment](https://conda.io/docs/user-guide/tasks/manage-environments.html)
@@ -9,7 +9,7 @@ TensorFlow Materials for MIST101 Workshop
     source deactivate                      # Deactivate
     ```
 - Install [Anaconda](https://www.continuum.io/)
-- Install [Tensorflow](https://www.tensorflow.org/)
+- Install [PyTorch](https://pytorch.org/)
 - Install other dependencies
     ```
     conda install matplotlib
